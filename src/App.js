@@ -13,7 +13,7 @@ function App() {
     if (storeUserLogged === '1') {
       setIsLoggedIn(true);
     }
-  }, []);
+  }, [isLoggedIn]);
 
   const loginHandler = (email, password) => {
     localStorage.setItem('isLoggedIn', '1');
