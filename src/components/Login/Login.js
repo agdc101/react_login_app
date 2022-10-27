@@ -20,7 +20,6 @@ const Login = (props) => {
     }, 500);
 
     return () => {
-      console.log('clean up');
       clearTimeout(identifier);
     };
   }, [enteredEmail, enteredPassword]);
